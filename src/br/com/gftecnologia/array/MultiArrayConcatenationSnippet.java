@@ -13,6 +13,7 @@ public class MultiArrayConcatenationSnippet {
 	 * @param rest  the rest of the arrays (optional)
 	 * @return concatenated array
 	 */
+	@SafeVarargs
 	public static <T> T[] multiArrayConcat(T[] first, T[]... rest) {
 		var totalLength = first.length;
 
